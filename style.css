@@ -203,7 +203,7 @@ nav {
   margin: 1rem;
   background: rgba(254, 251, 251, 0.9);
   box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .card2 {
@@ -217,7 +217,7 @@ nav {
   min-height: 15rem;
   background: rgba(254, 251, 251, 0.9);
   box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .card3 {
@@ -227,7 +227,7 @@ nav {
   margin: 1rem;
   background: rgba(254, 251, 251, 0.9);
   box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 @media (max-width: 50rem) {
@@ -301,7 +301,7 @@ main {
   nav {
     background: rgba(254, 251, 251, 0.9);
     box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
-    border-radius: 2rem;
+    border-radius: 0;
     justify-content: space-between;
   }
 
