@@ -53,11 +53,10 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  border-radius: 1rem;
 
   background: rgba(254, 251, 251, 0.9);
   box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .crantech-logo {
@@ -304,6 +303,9 @@ main {
     box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
     border-radius: 2rem;
     justify-content: space-between;
-    margin: 1rem min(12rem, 8%) !important;
+  }
+
+  .crantech-logo{
+    margin-left: 12rem;
   }
 }
