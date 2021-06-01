@@ -13,7 +13,7 @@
   --color-100: #DD384A;
   --color-150: #ffd0d5;
   --color-003: #FEF9FA;
-  --color-240: #DDDDDD;
+  --color-240: #EEEEEE;
   --color-200: #FFFFFF;
   --color-280: #777777;
 }
@@ -32,12 +32,14 @@ section {
   margin: 1rem;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
 
 #top{
   height: 5rem;
 }
-
-
 
 /*HEADER NAVIGATION SECTION*/
 
@@ -82,11 +84,6 @@ nav {
 }
 
 
-
-/* MAIN SECTION */
-
-/* HEAD SECTION */
-
 .head {
   display: flex;
   flex-direction: column;
@@ -98,8 +95,10 @@ nav {
 }
 
 .welcome {
-  font-size: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
   margin: 0;
   margin-top: 3rem;
   margin-left: 0;
@@ -133,8 +132,6 @@ nav {
   position: relative;
   margin-top: 3rem;
 }
-
-
 
 .services-container {
   display: grid;
@@ -180,6 +177,20 @@ nav {
 .office-left,
 .contacts-right {
   width: 100%;
+  padding: 0 2rem;
+}
+
+.actual-address{
+  padding: 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.actual-address:hover,
+.actual-address:active{
+  background: var(--color-240);
+  border-radius: 1rem;
 }
 
 
@@ -187,6 +198,13 @@ nav {
   display: flex;
   flex-direction: row;
   height: 100%;
+  padding: 1rem;
+}
+
+.contact-list-item:hover,
+.actual-address:active{
+  background: var(--color-240);
+  border-radius: 1rem;
 }
 
 .contact-icon {
@@ -223,11 +241,15 @@ nav {
 .card3 {
   display: flex;
   flex-direction: row;
-  padding: 2rem;
+  padding: 2rem 0;
   margin: 1rem;
   background: rgba(254, 251, 251, 0.9);
   box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
   border-radius: 1rem;
+}
+
+.card{
+
 }
 
 @media (max-width: 50rem) {
@@ -235,7 +257,11 @@ nav {
     flex-direction: column;
   }
 
+  .office-left{
+    width: auto;
+  }
   .contacts-right {
+    width: auto;
     margin-top: 2rem;
   }
 
@@ -286,6 +312,9 @@ main {
   .welcome {
     text-align: left;
     margin-left: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: none;
   }
 
   .crantechnologies {
