@@ -20,13 +20,13 @@
   --color-003: #FEF9FA;
   --color-240: #EEEEEE;
   --color-200: #FFFFFF;
-  --color-280: #777777; 
+  --color-280: #777777;
 }
 
 body {
   background: var(--color-200);
   margin: 0;
-  background-image: url(res/bg-blurr.svg);
+  background-image: url(res/bg20.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -43,7 +43,7 @@ body {
 }
 
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
