@@ -109,12 +109,13 @@ nav {
   font-size: 1.25rem;
   letter-spacing: 0.15ch;
   text-transform: uppercase;
-  transition: all 0.2s ease;
+  transition: all 0.25s;
 }
 
 .btn:hover,
 .btn:active{
-  padding: 1rem 7rem;
+  padding: 1rem 6rem;
+  /* width: 70%; */
   filter:brightness(0.9);
 }
 
@@ -139,7 +140,7 @@ nav {
 .card3 {
   display: flex;
   flex-direction: row;
-  padding: 2rem 0 !important;
+  padding: 3rem 0 2rem 0 !important;
 }
 
 
@@ -216,7 +217,7 @@ nav {
 .contact-list-item {
   display: flex;
   flex-direction: row;
-  height: 100%;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -227,8 +228,18 @@ nav {
 }
 
 .contact-icon {
-  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
 }
+
+
+.card3-title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+
 
 @media (max-width: 50rem) {
   .card3 {
@@ -246,15 +257,10 @@ nav {
 
   .card3-title {
     text-align: center;
+    margin: 0 0 1rem 1.5rem;
   }
 }
 
-.card3-title {
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
 
 main {
   display: flex;
@@ -287,6 +293,10 @@ main {
 .section-title span{
   background: #FFFFFF;
   padding: 0 0.5rem;
+}
+
+.call{
+  padding-top: 2rem;
 }
 
 
