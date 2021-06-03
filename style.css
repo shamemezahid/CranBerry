@@ -63,6 +63,8 @@ nav {
   align-items: center;
   margin: 2rem;
   text-align: center;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
 }
 
 .head :first-child {
@@ -86,7 +88,7 @@ nav {
 }
 
 .tagline {
-  font-size: clamp(1rem, 10vw, 2rem);
+  font-size: 1.5rem;
   margin: 3rem 1rem 0rem 1rem;
 }
 
@@ -107,6 +109,13 @@ nav {
   font-size: 1.25rem;
   letter-spacing: 0.15ch;
   text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.btn:hover,
+.btn:active{
+  padding: 1rem 7rem;
+  filter:brightness(0.9);
 }
 
 .card1 {
@@ -115,6 +124,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: all 0.5s ease;
 }
 
 .card2 {
@@ -258,7 +268,7 @@ main {
   width: auto;
   position: relative;
   margin: 0.5rem 1rem;
-  padding: 3rem 1.5rem;
+  padding: 3rem 1rem;
   border-radius: 1rem;
   background-color:rgba(255,255,255,0.75);
 }
@@ -307,6 +317,7 @@ main {
   }
 
   .tagline {
+    font-size: 2rem;
     margin-left: 1rem;
   }
 
