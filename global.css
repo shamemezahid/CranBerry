@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap');
+
+* {
+  transition: all 0.5s linear;
+  scroll-behavior: smooth;
+  /* font-family: 'Cinzel', serif; */
+  font-family: 'Cabin', sans-serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-weight: 400;
+  margin: 0;
+}
+
+:root {
+  /*LIGHT MODE*/
+  --color-000: #000000;
+  --color-100: #DD384A;
+  --color-150: #ffd0d5;
+  --color-003: #FEF9FA;
+  --color-240: #EEEEEE;
+  --color-200: #FFFFFF;
+  --color-280: #777777; 
+}
+
+body {
+  background: var(--color-200);
+  margin: 0;
+  background-image: url(res/bg-blurr.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+
+
+.card {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background: rgba(254, 251, 251, 0.9);
+  box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
+  border-radius: 1rem;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
