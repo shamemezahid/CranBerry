@@ -1,43 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-
-* {
-  transition: all 0.5s linear;
-  scroll-behavior: smooth;
-  /* font-family: 'Cinzel', serif; */
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-}
-
-:root {
-  --color-100: #DD384A;
-  --color-150: #ffd0d5;
-  --color-003: #FEF9FA;
-  --color-240: #EEEEEE;
-  --color-200: #FFFFFF;
-  --color-280: #777777;
-}
-
-body {
-  margin: 0;
-  background-image: url(res/bg-blurr.svg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-}
-
-section {
-  display: block;
-  align-items: center;
-  margin: 1rem;
-}
-
-a{
-  text-decoration: none;
-  color: black;
-}
-
-#top{
+#top {
   height: 5rem;
 }
 
@@ -84,10 +45,24 @@ nav {
 }
 
 
+.banner {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 5rem;
+}
+
+
+/* HEAD SECTION */
+
+
 .head {
+  background: #FFFFFF;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 2rem;
+  text-align: center;
 }
 
 .head :first-child {
@@ -95,9 +70,8 @@ nav {
 }
 
 .welcome {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   margin: 0;
   margin-top: 3rem;
@@ -108,21 +82,56 @@ nav {
   margin-top: 1.5rem;
   max-width: 60rem;
   margin-left: 0;
-  align-self: center;
   width: min(90%, 60rem);
 }
 
 .tagline {
-  font-size: 2rem;
-  margin: 0;
-  margin-left: 0;
-  text-align: center;
-  margin-top: 3rem;
+  font-size: clamp(1rem, 10vw, 2rem);
+  margin: 3rem 1rem 0rem 1rem;
 }
 
 .red {
   color: var(--color-100);
 }
+
+.btn-contact{
+  margin: 3rem 0 0 0;
+}
+
+.btn{
+  padding: 1rem 4rem;
+  background: var(--color-100);
+  color: var(--color-200);
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.15ch;
+  text-transform: uppercase;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 15rem;
+}
+
+.card3 {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0 !important;
+}
+
 
 
 /* SERVICES SECTION */
@@ -180,7 +189,7 @@ nav {
   padding: 0 2rem;
 }
 
-.actual-address{
+.actual-address {
   padding: 1rem;
   height: 3rem;
   display: flex;
@@ -188,7 +197,7 @@ nav {
 }
 
 .actual-address:hover,
-.actual-address:active{
+.actual-address:active {
   background: var(--color-240);
   border-radius: 1rem;
 }
@@ -202,7 +211,7 @@ nav {
 }
 
 .contact-list-item:hover,
-.actual-address:active{
+.actual-address:active {
   background: var(--color-240);
   border-radius: 1rem;
 }
@@ -211,55 +220,15 @@ nav {
   margin-right: 1rem;
 }
 
-.card1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem;
-  background: rgba(254, 251, 251, 0.9);
-  box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
-  border-radius: 1rem;
-}
-
-.card2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem;
-  min-height: 15rem;
-  background: rgba(254, 251, 251, 0.9);
-  box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
-  border-radius: 1rem;
-}
-
-.card3 {
-  display: flex;
-  flex-direction: row;
-  padding: 2rem 0;
-  margin: 1rem;
-  background: rgba(254, 251, 251, 0.9);
-  box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
-  border-radius: 1rem;
-}
-
-.card{
-
-}
-
 @media (max-width: 50rem) {
   .card3 {
     flex-direction: column;
   }
 
-  .office-left{
+  .office-left {
     width: auto;
   }
+
   .contacts-right {
     width: auto;
     margin-top: 2rem;
@@ -288,7 +257,10 @@ main {
 .section {
   width: auto;
   position: relative;
-  margin: 2rem 1rem;
+  margin: 0.5rem 1rem;
+  padding: 3rem 1.5rem;
+  border-radius: 1rem;
+  background-color:rgba(255,255,255,0.75);
 }
 
 .section-title {
@@ -297,34 +269,49 @@ main {
   color: var(--color-280);
   text-align: center;
   font-weight: 600;
+  border-bottom: 1px solid var(--color-280); 
+  line-height: 0.1rem;
+  margin-bottom: 2.5rem;
 }
+
+.section-title span{
+  background: #FFFFFF;
+  padding: 0 0.5rem;
+}
+
 
 @media (min-width: 74rem) {
   .section {
-    margin: 2rem min(12rem, 8%) !important;
+    margin: 1rem min(12rem, 8%) !important;
   }
 
   .section-title {
+    margin-bottom: 2.5rem;
     text-align: left;
     font-size: 2rem;
   }
 
+  .head{
+    align-items: flex-start;
+  }
+
   .welcome {
-    text-align: left;
     margin-left: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-transform: none;
   }
 
   .crantechnologies {
-    align-self: flex-start;
     margin-left: 1rem;
   }
 
   .tagline {
-    text-align: left;
     margin-left: 1rem;
+  }
+
+  .btn-contact{
+    margin: 3rem 0 0 1rem;
   }
 
   nav {
@@ -334,7 +321,7 @@ main {
     justify-content: space-between;
   }
 
-  .crantech-logo{
+  .crantech-logo {
     margin-left: 12rem;
   }
 }
