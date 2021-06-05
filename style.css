@@ -10,13 +10,13 @@ nav {
   width: 100%;
   z-index: 100;
 
-  height: 5rem;
+  /* height: 5rem; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-
+  padding: 1rem 0;
   background: rgba(254, 251, 251, 0.9);
   box-shadow: -4px -4px 16px rgba(85, 85, 85, 0.1), 4px 4px 17px rgba(238, 155, 164, 0.1);
   border-radius: 0.5rem;
@@ -36,6 +36,7 @@ nav {
 .topbar-nav a {
   font-size: 0.75rem;
   margin-left: 2rem;
+  padding: 1rem 0;
   text-decoration: none;
   color: black;
 }
@@ -113,18 +114,16 @@ nav {
 
 .btn:hover,
 .btn:active{
-  padding: 1rem 6rem;
-  /* width: 70%; */
-  filter:brightness(0.9);
+  padding: 1rem 7rem;
 }
 
 .card1 {
   display: flex;
+  height: fit-content;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease !important;
 }
 
 .card2 {
@@ -157,9 +156,42 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
 }
 
-.card1-img {
-  min-width: 10rem;
+
+.card1-wrapper{
+  position: relative;
+  transform-style: preserve-3d;
 }
+
+.card1-front,
+.card1-back{
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card1-back{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  transform: rotateX(180deg);
+}
+
+.card1:hover .card1-wrapper{
+  transform: rotateX(180deg);
+  transition: all 0.2s ease !important;
+}
+
+.card1-back h1{
+  color: var(--color-100);
+  justify-content: center;
+  border-radius: 0.75rem;
+}
+
+.card1-back p{
+  margin: 1rem 0rem;
+}
+
 
 /* PROCESS SECTION */
 
@@ -175,7 +207,8 @@ nav {
 
 .card2-img {
   position: absolute;
-}
+} 
+
 
 
 @media (max-width: 24rem) {
@@ -299,6 +332,11 @@ main {
 
 
 @media (min-width: 74rem) {
+
+  #top {
+    height: 5rem;
+  }
+
   .section {
     margin: 1rem min(12rem, 8%) !important;
   }
@@ -339,10 +377,15 @@ main {
     border-radius: 0;
     justify-content: space-between;
   }
-
+  
   .crantech-logo {
     margin-left: 12rem;
   }
+
+  /* .topbar-nav{
+    margin-right: 6rem;
+  } */
+
 }
 
 .social-container{
