@@ -132,7 +132,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 15rem;
+  min-height: 10rem;
 }
 
 .card3 {
@@ -183,14 +183,16 @@ nav {
 }
 
 .card1-back h1{
+  font-weight: 600;
   color: var(--color-100);
   justify-content: center;
   border-radius: 0.75rem;
 }
 
 .card1-back p{
-  margin: 1rem 0rem;
+  margin: 2rem 0 0 0;
 }
+
 
 
 /* PROCESS SECTION */
@@ -207,8 +209,14 @@ nav {
 
 .card2-img {
   position: absolute;
+  margin: auto;
+  height: 80%;
+  transition: all 0.5s ease;
 } 
 
+.card2:hover .card2-img{
+  height: 1%;
+}
 
 
 @media (max-width: 24rem) {
